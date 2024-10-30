@@ -14,8 +14,6 @@ const eslintPkg = require('eslint/package.json');
 const babelEslintVersion = require('babel-eslint/package.json').version;
 const RuleTester = require('../../helpers/ruleTester');
 
-require('object.entries/auto'); // for node 6, eslint 5, new TS parser, `function Hello({firstname}: Props): React$Element {` cases
-
 const rule = require('../../../lib/rules/no-unused-prop-types');
 
 const parsers = require('../../helpers/parsers');
